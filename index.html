@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gradial: a running training plan for iPhone and Apple Watch</title>
-<meta name="description" content="Gradial builds a training plan from your current fitness and your goal time, paces every session off your own VDOT, and sends it to your Apple Watch. No account, no subscription, nothing sent to a server.">
+<title>Gradial: a running training plan for iPhone, iPad, Mac and Apple Watch</title>
+<meta name="description" content="Gradial builds a training plan from your current fitness and your goal time, paces every session off your own VDOT, and sends it to your Apple Watch. No account, no subscription, no server of ours.">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Gradial: a running training plan for iPhone and Apple Watch">
-<meta property="og:description" content="A training plan built from your fitness, that reads your runs back. No account, no subscription, nothing sent to a server.">
+<meta property="og:title" content="Gradial: a running training plan for iPhone, iPad, Mac and Apple Watch">
+<meta property="og:description" content="A training plan built from your fitness, that reads your runs back. No account, no subscription, no server of ours.">
 <meta property="og:image" content="assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="assets/og.png">
@@ -250,16 +250,17 @@
   <div class="wrap">
     <div class="position">
       <p class="eyebrow">The position</p>
-      <h2>No account. No subscription. No networking code at all.</h2>
+      <h2>No account. No subscription. No server of ours.</h2>
       <p>Every other app in this category wants an account and a monthly fee, because every
         other app in this category keeps your training on its own servers. Gradial does not
         have any servers. There is nothing to sign in to, nothing to cancel, and nothing to
-        leak, because the app has no code in it that can open a network connection.</p>
+        leak. The only network code in the app talks to Apple: the App Store for one
+        purchase, and your own iCloud for sync, if you buy it.</p>
       <p>That is a checkable claim rather than a promise. Your runs are read from Apple Health
-        on the device that already holds them, the plan is a file in the app's own storage,
+        on the iPhone that already holds them, the plan is a file in the app's own storage,
         and deleting the app deletes all of it.</p>
       <div class="facts">
-        <div class="fact"><strong>Free</strong><span>No purchase, no trial, no tier above this one.</span></div>
+        <div class="fact"><strong>Free</strong><span>Every feature, on iPhone, iPad and Mac. One optional purchase: sync between them.</span></div>
         <div class="fact"><strong>No sign-in</strong><span>No account exists, so there is none to make.</span></div>
         <div class="fact"><strong>No telemetry</strong><span>No analytics, no crash reporting, no advertising identifier.</span></div>
       </div>
@@ -274,7 +275,9 @@
     <ul class="plain">
       <li>iOS 26 or later. Gradial uses APIs that do not exist before it, so there is no build
         for an older iPhone.</li>
-      <li>iPhone only. There is no iPad or Mac version, and no Vision Pro version.</li>
+      <li>iPhone, iPad and Mac. Apple Health lives on the iPhone, so that is where runs are
+        read and the watch is scheduled; the iPad and the Mac receive the runs through
+        Gradial Sync, and do everything else. No Vision Pro version.</li>
       <li>An Apple Watch running watchOS 26 or later is needed for the wrist half. Without one
         the plan still works; the sessions simply stay on the phone.</li>
       <li>Race predictions need Apple Health's VO&#8322;max, which Health writes after a few
@@ -297,8 +300,10 @@
         <p>No. There is no account and no sign-in screen. Open the app and build a plan.</p></details>
 
       <details class="faq"><summary>What does it cost?</summary>
-        <p>Nothing. There is no in-app purchase and no subscription, and there is no paid tier
-          holding features back.</p></details>
+        <p>Nothing, on every platform. There is no subscription and no paid tier holding
+          features back. The one in-app purchase is Gradial Sync, bought once for every
+          device on your Apple Account, and it unlocks exactly one thing: your plans and runs
+          copied between your iPhone, iPad and Mac.</p></details>
 
       <details class="faq"><summary>Does it work without Apple Health?</summary>
         <p>The plan does. Building a plan, seeing every session and its steps, and sending
@@ -312,9 +317,10 @@
           you already record your runs with, as long as it writes them to Apple Health.</p></details>
 
       <details class="faq"><summary>Where does my data go?</summary>
-        <p>Nowhere. The app contains no networking code, so there is no request it could make
-          even by accident. Health data is read on the device when a screen needs it and is
-          never copied out. See the <a href="privacy/">privacy policy</a>.</p></details>
+        <p>Nowhere, unless you buy sync &mdash; and then only to your own iCloud, in the app's
+          private area of it, where Apple holds it under your Apple Account and we cannot
+          read it. There is no server of ours. See the <a href="privacy/">privacy
+          policy</a>.</p></details>
 
       <details class="faq"><summary>How are the paces worked out?</summary>
         <p>From VDOT, Jack Daniels' method for turning a race result into training paces. Your
@@ -327,9 +333,10 @@
           and anchor to the result.</p></details>
 
       <details class="faq"><summary>Is my training synced between devices?</summary>
-        <p>No, and that is the trade. Nothing leaves the phone, so nothing arrives on a second
-          one either. Your runs live in Apple Health and sync as Health syncs them; the plan
-          itself does not.</p></details>
+        <p>With Gradial Sync, yes: plans, the marks you make on them, your heart-rate settings
+          and every run &mdash; route, splits, heart rate and form &mdash; are copied between
+          your devices through your own iCloud. Runs are recorded on the iPhone and arrive on
+          the others. Without it, nothing leaves the phone.</p></details>
 
     </div>
   </div>

@@ -138,12 +138,13 @@
       finds the answer. Please say which iPhone and which iOS version you are on, and what you
       expected to happen.</p>
     <p>If the problem involves your health data, do not paste it into an issue. Describe the
-      shape of the problem instead: nothing about your runs ever needs to leave your phone to
+      shape of the problem instead: nothing about your runs ever needs to leave your devices to
       get this fixed.</p>
 
     <h2>What the app needs</h2>
     <ul>
-      <li>An iPhone running iOS 26 or later. There is no build for earlier versions.</li>
+      <li>An iPhone running iOS 26 or later, an iPad on iPadOS 26, or a Mac on macOS 26.
+        There is no build for earlier versions.</li>
       <li>Apple Health, for reading your finished runs. The plan works without it; the scoring
         does not.</li>
       <li>An Apple Watch running watchOS 26 or later, if you want the sessions on your wrist.
@@ -186,14 +187,27 @@
         everything Gradial has stored, delete the app: the plan file goes with it, and your
         Health data was never copied out in the first place.</p></details>
 
-    <details class="faq"><summary>Can I move my plan to a new phone?</summary>
-      <p>Not directly. Nothing leaves the phone, which also means nothing syncs to a second
-        one. Your runs live in Apple Health and travel as Health travels; the plan itself does
-        not, and you would build it again.</p></details>
+    <details class="faq"><summary>Can I move my plan to a new phone, or see it on my iPad or Mac?</summary>
+      <p>With Gradial Sync, yes: buy it once, sign in to iCloud on each device, and your plans
+        and runs are copied between them. Runs are recorded on the iPhone and arrive on the
+        others. Without it, nothing leaves the phone: your runs live in Apple Health and
+        travel as Health travels; the plan itself does not, and you would build it again.</p></details>
+
+    <details class="faq"><summary>I bought Sync and my other device says it is not.</summary>
+      <p>Open You, Sync on that device and tap Restore purchase, signed in to the same Apple
+        Account. Family Sharing is on, so a family member's purchase counts too. If the App
+        Store cannot be reached the section says so and offers to try again.</p></details>
+
+    <details class="faq"><summary>My iPad or Mac shows no runs.</summary>
+      <p>Runs arrive from the iPhone, so three things need to be true: Sync is bought, the
+        iPhone has opened Gradial since (it writes the runs down in the background, newest
+        first, and shows its progress under You, Sync), and both devices are signed in to the
+        same iCloud account. Sync now, in the same section, asks iCloud again.</p></details>
 
     <h2>Known limitations</h2>
     <ul>
-      <li>iPhone only. No iPad, Mac or Vision Pro version.</li>
+      <li>iPhone, iPad and Mac. Apple Health is on the iPhone only, so an iPad or Mac
+        without an iPhone and Gradial Sync shows a plan but no runs. No Vision Pro version.</li>
       <li>Not available in the European Union at launch.</li>
       <li>Watch scheduling cannot be tested without a physical Apple Watch.</li>
       <li>Running dynamics (cadence, ground contact, vertical oscillation, stride length) only
