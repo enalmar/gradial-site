@@ -405,3 +405,60 @@ details.faq p{margin:0;padding:0 0 22px}
 .page-hero .kicker{margin-bottom:18px}
 .page-hero p:not(.kicker):not(.lead):not(.meta){margin-top:18px;color:var(--text-2);max-width:60ch}
 .page-hero a{color:var(--amber)}
+
+/* ============ to the watch ============ */
+/* Apple's Workout app speaks in its own green; it marks the two nodes that are Apple's. */
+:root{--workout:#B4F05A}
+.towatch{background:
+  radial-gradient(900px 520px at 12% 0%,rgba(180,240,90,.07),transparent 70%),
+  radial-gradient(800px 500px at 100% 70%,rgba(255,107,106,.08),transparent 70%)}
+.towatch .flow{margin-top:clamp(36px,5vw,64px)}
+.node--workout{--accent:linear-gradient(90deg,transparent,var(--workout),transparent)}
+.node--watch{--accent:linear-gradient(90deg,var(--workout),var(--amber))}
+.mini-card.sent strong{color:var(--z-e);margin-bottom:0}
+.mini-btn{display:grid;place-items:center;height:24px;margin-top:9px;border-radius:99px;font-size:10px;font-weight:700;
+  background:var(--coral);color:#1A0F14}
+
+/* the real Workout app screens, in a drawn phone */
+.shots{position:relative;display:flex;justify-content:center;padding:4px 0 2px}
+.shot-phone{position:relative;width:58%;margin:0;padding:6px;border-radius:30px;background:#05060C;
+  box-shadow:inset 0 0 0 1.5px #2A2D44,0 24px 50px -18px rgba(0,0,0,.85);z-index:2}
+.shot-phone img{display:block;width:100%;height:auto;border-radius:25px}
+.shot-phone::before{content:"";position:absolute;top:calc(6px + 1.4%);left:50%;translate:-50% 0;width:30%;height:3.3%;
+  border-radius:99px;background:#000;z-index:1}
+.shot-phone.back{z-index:1;margin-left:-26%;margin-top:40px;rotate:5deg;filter:brightness(.9)}
+.shots{margin-right:-8%}
+.node-note{font-size:12.5px;color:var(--text-3);text-align:center;margin-top:-4px}
+
+/* Apple Watch, drawn: the session running in the native Workout app (an illustration) */
+.bigwatch{position:relative;isolation:isolate;width:196px;margin:40px auto 44px;font-family:-apple-system,"SF Pro Text",Archivo,system-ui,sans-serif}
+.bigwatch::before,.bigwatch::after{content:"";position:absolute;left:34px;right:34px;height:44px;z-index:-1;
+  background:linear-gradient(180deg,#2A2D40,#171926)}
+.bigwatch::before{top:-36px;border-radius:16px 16px 6px 6px}
+.bigwatch::after{bottom:-36px;border-radius:6px 6px 16px 16px}
+.bw-case{border-radius:54px;padding:11px;background:linear-gradient(150deg,#4A4E66,#1C1E2C 55%,#2C2F44);
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.9),inset 0 0 0 1.5px rgba(255,255,255,.08),0 0 80px -20px rgba(180,240,90,.25)}
+.bw-screen{border-radius:44px;background:#000;padding:16px 15px 17px;color:#fff;aspect-ratio:410/502}
+.bw-top{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--workout)}
+.bw-top time{margin-left:auto;color:#fff;font-weight:600}
+.bw-run{width:14px;height:14px;border-radius:50%;background:var(--workout)}
+.bw-step{margin-top:7px;font-size:11.5px;font-weight:600;color:#fff;display:flex;justify-content:space-between}
+.bw-step b{color:var(--z-t);font-weight:700}
+.bw-time{margin-top:3px;font-size:26px;font-weight:600;letter-spacing:-.01em;color:#FFE34D;font-variant-numeric:tabular-nums}
+.bw-pace{display:flex;align-items:baseline;gap:4px;margin-top:2px}
+.bw-pace strong{font-size:30px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.bw-pace small{font-size:10px;font-weight:700;color:#9A9AA2}
+.bw-band{position:relative;height:6px;border-radius:3px;margin-top:5px;
+  background:linear-gradient(90deg,#2B2B30 0 14%,var(--workout) 14% 74%,#2B2B30 74%)}
+.bw-band i{position:absolute;top:-3px;left:var(--at);width:4px;height:12px;border-radius:2px;background:#fff;translate:-50% 0}
+.bw-target{font-size:9.5px;font-weight:700;color:var(--workout);margin-top:5px;letter-spacing:.02em}
+.bw-row{display:flex;justify-content:space-between;margin-top:8px}
+.bw-row span{display:flex;align-items:baseline;gap:3px}
+.bw-row strong{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+.bw-row small{font-size:8.5px;font-weight:700;color:#9A9AA2}
+.bw-row .hr strong{color:#FF4D5E}
+.bw-crown{position:absolute;right:-7px;top:52px;width:9px;height:30px;border-radius:4px;
+  background:linear-gradient(90deg,#3A3D52,#6A6E88,#3A3D52)}
+.bw-side{position:absolute;right:-4px;top:100px;width:5px;height:38px;border-radius:3px;background:#2E3146}
+@media(max-width:959px){.shot-phone{width:min(220px,52%)}.bigwatch{margin-top:48px}}
+@media(max-width:959px){.towatch .loop-label{flex-direction:column;gap:2px;text-align:center;white-space:normal;width:min(320px,86%)}}

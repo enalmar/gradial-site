@@ -35,6 +35,7 @@
       <span>GRADIAL</span>
     </a>
     <nav aria-label="Sections">
+      <a href="#watch">Watch</a>
       <a href="#studio">Studio</a>
       <a href="#app">The app</a>
       <a href="#pro">Pro</a>
@@ -80,6 +81,108 @@
     </div>
   </div>
 </div>
+
+<!-- ============ To the watch ============ -->
+<section class="towatch" id="watch" aria-labelledby="watch-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Runs in Apple&rsquo;s own Workout app</p>
+      <h2 id="watch-h">Every session, straight to your Apple&nbsp;Watch.</h2>
+      <p>Gradial writes each session of your plan into Apple&rsquo;s Workout app: the warm-up, every
+        rep at its pace, the recoveries and the cool-down. On the day, start it on your watch like
+        any other run. There is no Gradial app to open on your wrist; it is the Workout app you
+        already use.</p>
+    </div>
+
+    <figure class="flow flow--watch" aria-labelledby="flow-watch">
+      <div class="flow-head">
+        <h3 id="flow-watch">From your plan to your wrist</h3>
+        <p>Send the plan to your watch once. When the plan changes, Gradial says so and one tap
+          brings the watch up to date.</p>
+      </div>
+
+      <div class="flow-grid">
+        <!-- left: Gradial -->
+        <div class="node node--app">
+          <div class="node-title">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#FFB07A" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5.2h3" stroke-linecap="round"/></svg></div>
+            <div><h4>Gradial</h4><p>Your plan, paced from your fitness</p></div>
+          </div>
+          <div class="devices" aria-hidden="true">
+            <div class="mini-phone"><div class="mini-screen">
+              <h6>Watch</h6>
+              <div class="mini-card"><small>Today</small><strong>3 &times; 1200m @ 3:35/km</strong>
+                <div class="segs"><i style="--c:var(--z-e);flex:3"></i><i style="--c:var(--z-i);flex:2"></i><i style="--c:#2A2A30;flex:1"></i><i style="--c:var(--z-i);flex:2"></i><i style="--c:#2A2A30;flex:1"></i><i style="--c:var(--z-i);flex:2"></i><i style="--c:var(--z-e);flex:2"></i></div></div>
+              <div class="mini-card sent"><small>20 sessions sent</small><strong>Up to date</strong></div>
+              <div class="mini-btn">Send to watch</div>
+            </div></div>
+          </div>
+          <ul class="checks">
+            <li>Builds each session from your plan</li>
+            <li>Paces every rep from your own fitness</li>
+            <li>Keeps the watch in step as the plan changes</li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <span>Schedules each session</span>
+          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
+          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
+        </div>
+
+        <!-- middle: Apple's Workout app on iPhone (real screenshots) -->
+        <div class="node node--workout">
+          <div class="node-title">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#B4F05A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="14.5" cy="4.5" r="1.8"/><path d="M8 21l3-6 3 2.5V22M6.5 11.5l3-3.5 4 1 2.5 3.5h3M11 15l-1.5-4"/></svg></div>
+            <div><h4>Workout app on iPhone</h4><p>Apple&rsquo;s Fitness app, Workout tab</p></div>
+          </div>
+          <div class="shots">
+            <figure class="shot-phone"><img src="assets/screens/workout-schedule.jpg" width="600" height="1304" alt="Apple's Workout app on iPhone listing Gradial's sessions: today 3 by 1200 metres at 3:35 per kilometre, then an easy run with strides, a tempo and a long run." loading="lazy"></figure>
+            <figure class="shot-phone back"><img src="assets/screens/workout-session.jpg" width="600" height="1304" alt="One Gradial session in the Workout app: warm up easy 15 minutes, then 3 repeats of 1200 metres hard at 3:27 to 3:43 per kilometre with a recovery jog, then cool down easy 10 minutes." loading="lazy"></figure>
+          </div>
+          <p class="node-note">Real screenshots: the sessions Gradial scheduled, managed by Gradial.</p>
+        </div>
+
+        <div class="link">
+          <span>Syncs to your watch</span>
+          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
+          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
+        </div>
+
+        <!-- right: Apple Watch, native Workout app -->
+        <div class="node node--watch">
+          <div class="node-title">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#B4F05A" stroke-width="1.7" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.7-3.5h4.6L15 6M9 18l.7 3.5h4.6L15 18"/></svg></div>
+            <div><h4>Apple Watch</h4><p>The native Workout app</p></div>
+          </div>
+          <div class="bigwatch" role="img" aria-label="Illustration: Apple Watch running the session in the Workout app, rep 2 of 3, current pace 3:31 per kilometre against a target of 3:27 to 3:43.">
+            <div class="bw-case"><div class="bw-screen">
+              <div class="bw-top"><span class="bw-run"></span><span>3 &times; 1200m</span><time>9:41</time></div>
+              <div class="bw-step">Hard &mdash; 5K effort <b>2 of 3</b></div>
+              <div class="bw-time">21:47.18</div>
+              <div class="bw-pace"><strong>3&prime;31&Prime;</strong><small>/KM</small></div>
+              <div class="bw-band"><i style="--at:27%"></i></div>
+              <div class="bw-target">3&prime;27&Prime;&ndash;3&prime;43&Prime; /KM</div>
+              <div class="bw-row"><span><strong>0.64</strong><small>KM LEFT</small></span><span class="hr"><strong>168</strong><small>BPM</small></span></div>
+            </div></div>
+            <span class="bw-crown"></span><span class="bw-side"></span>
+          </div>
+          <ul class="checks">
+            <li>Step by step: warm-up, reps, recoveries</li>
+            <li>Pace alerts when you drift out of the band</li>
+            <li>Start it like any other outdoor run</li>
+          </ul>
+        </div>
+
+        <div class="loop">
+          <div class="loop-track"></div>
+          <svg class="loop-head" viewBox="0 0 14 12" aria-hidden="true"><path d="M7 0 14 12H0z"/></svg>
+          <p class="loop-label">The finished run comes back through Apple Health, <em>scored against the plan</em></p>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
 
 <!-- ============ Studio ============ -->
 <section class="studio" id="studio" aria-labelledby="studio-h">
