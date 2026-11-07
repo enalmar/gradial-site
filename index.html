@@ -37,7 +37,7 @@
     <nav aria-label="Sections">
       <a href="#watch">Watch</a>
       <a href="#studio">Studio</a>
-      <a href="#app">The app</a>
+      <a href="#devices">Devices</a>
       <a href="#pro">Pro</a>
       <a href="#faq">Questions</a>
       <a href="support/">Support</a>
@@ -86,100 +86,53 @@
 <section class="towatch" id="watch" aria-labelledby="watch-h">
   <div class="wrap">
     <div class="sec-head">
-      <p class="kicker">Runs in Apple&rsquo;s own Workout app</p>
       <h2 id="watch-h">Every session, straight to your Apple&nbsp;Watch.</h2>
-      <p>Gradial writes each session of your plan into Apple&rsquo;s Workout app: the warm-up, every
-        rep at its pace, the recoveries and the cool-down. On the day, start it on your watch like
-        any other run. There is no Gradial app to open on your wrist; it is the Workout app you
-        already use.</p>
+      <p>Gradial writes each session of your plan into Apple&rsquo;s own Workout app: the warm-up,
+        every rep at its pace, the recoveries and the cool-down. On the day you start it on your
+        watch like any other run. There&rsquo;s no Gradial app to open on your wrist.</p>
     </div>
 
-    <figure class="flow flow--watch" aria-labelledby="flow-watch">
-      <div class="flow-head">
-        <h3 id="flow-watch">From your plan to your wrist</h3>
-        <p>Send the plan to your watch once. When the plan changes, Gradial says so and one tap
-          brings the watch up to date.</p>
-      </div>
-
-      <div class="flow-grid">
-        <!-- left: Gradial -->
-        <div class="node node--app">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#FFB07A" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5.2h3" stroke-linecap="round"/></svg></div>
-            <div><h4>Gradial</h4><p>Your plan, paced from your fitness</p></div>
+    <figure class="seq" aria-label="How a session gets from Gradial to your wrist">
+      <ol class="seq-steps">
+        <li>
+          <div class="seq-art"><div class="device"><img src="assets/screens/plan.jpg" width="600" height="1304" loading="lazy"
+            alt="Gradial's Plan tab: a half marathon in week 4 of 6, and the Apple Watch card with eleven sessions ready to send."></div></div>
+          <span class="seq-n"><b>1</b></span>
+          <h3>Send the plan to your watch</h3>
+          <p>Gradial builds each session from your plan and paces every rep from your own fitness.
+            One tap sends the coming weeks; when the plan changes, one tap updates them.</p>
+        </li>
+        <li>
+          <div class="seq-art"><div class="device"><img src="assets/screens/workout-schedule.jpg" width="600" height="1304" loading="lazy"
+            alt="Apple's Workout app on iPhone, listing the sessions Gradial scheduled: today 3 by 1200 metres at 3:35 per kilometre, then an easy run with strides, a tempo and a long run."></div></div>
+          <span class="seq-n"><b>2</b></span>
+          <h3>They land in Apple&rsquo;s Workout app</h3>
+          <p>Each one waits on its day in the Workout app, step by step, marked as managed by
+            Gradial. This is a real screen, not a drawing.</p>
+        </li>
+        <li>
+          <div class="seq-art">
+            <div class="bigwatch" role="img" aria-label="Illustration: Apple Watch running the session in the Workout app, rep 2 of 3, current pace 3:31 per kilometre against a target of 3:27 to 3:43.">
+              <div class="bw-case"><div class="bw-screen">
+                <div class="bw-top"><span class="bw-run"></span><span>3 &times; 1200m</span><time>9:41</time></div>
+                <div class="bw-step">Hard &mdash; 5K effort <b>2 of 3</b></div>
+                <div class="bw-time">21:47.18</div>
+                <div class="bw-pace"><strong>3&prime;31&Prime;</strong><small>/KM</small></div>
+                <div class="bw-band"><i style="--at:27%"></i></div>
+                <div class="bw-target">3&prime;27&Prime;&ndash;3&prime;43&Prime; /KM</div>
+                <div class="bw-row"><span><strong>0.64</strong><small>KM LEFT</small></span><span class="hr"><strong>168</strong><small>BPM</small></span></div>
+              </div></div>
+              <span class="bw-crown"></span><span class="bw-side"></span>
+            </div>
           </div>
-          <div class="devices" aria-hidden="true">
-            <div class="mini-phone"><div class="mini-screen">
-              <h6>Watch</h6>
-              <div class="mini-card"><small>Today</small><strong>3 &times; 1200m @ 3:35/km</strong>
-                <div class="segs"><i style="--c:var(--z-e);flex:3"></i><i style="--c:var(--z-i);flex:2"></i><i style="--c:#2A2A30;flex:1"></i><i style="--c:var(--z-i);flex:2"></i><i style="--c:#2A2A30;flex:1"></i><i style="--c:var(--z-i);flex:2"></i><i style="--c:var(--z-e);flex:2"></i></div></div>
-              <div class="mini-card sent"><small>20 sessions sent</small><strong>Up to date</strong></div>
-              <div class="mini-btn">Send to watch</div>
-            </div></div>
-          </div>
-          <ul class="checks">
-            <li>Builds each session from your plan</li>
-            <li>Paces every rep from your own fitness</li>
-            <li>Keeps the watch in step as the plan changes</li>
-          </ul>
-        </div>
-
-        <div class="link">
-          <span>Schedules each session</span>
-          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
-          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
-        </div>
-
-        <!-- middle: Apple's Workout app on iPhone (real screenshots) -->
-        <div class="node node--workout">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#B4F05A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="14.5" cy="4.5" r="1.8"/><path d="M8 21l3-6 3 2.5V22M6.5 11.5l3-3.5 4 1 2.5 3.5h3M11 15l-1.5-4"/></svg></div>
-            <div><h4>Workout app on iPhone</h4><p>Apple&rsquo;s Fitness app, Workout tab</p></div>
-          </div>
-          <div class="shots">
-            <figure class="shot-phone"><img src="assets/screens/workout-schedule.jpg" width="600" height="1304" alt="Apple's Workout app on iPhone listing Gradial's sessions: today 3 by 1200 metres at 3:35 per kilometre, then an easy run with strides, a tempo and a long run." loading="lazy"></figure>
-            <figure class="shot-phone back"><img src="assets/screens/workout-session.jpg" width="600" height="1304" alt="One Gradial session in the Workout app: warm up easy 15 minutes, then 3 repeats of 1200 metres hard at 3:27 to 3:43 per kilometre with a recovery jog, then cool down easy 10 minutes." loading="lazy"></figure>
-          </div>
-          <p class="node-note">Real screenshots: the sessions Gradial scheduled, managed by Gradial.</p>
-        </div>
-
-        <div class="link">
-          <span>Syncs to your watch</span>
-          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
-          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
-        </div>
-
-        <!-- right: Apple Watch, native Workout app -->
-        <div class="node node--watch">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#B4F05A" stroke-width="1.7" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.7-3.5h4.6L15 6M9 18l.7 3.5h4.6L15 18"/></svg></div>
-            <div><h4>Apple Watch</h4><p>The native Workout app</p></div>
-          </div>
-          <div class="bigwatch" role="img" aria-label="Illustration: Apple Watch running the session in the Workout app, rep 2 of 3, current pace 3:31 per kilometre against a target of 3:27 to 3:43.">
-            <div class="bw-case"><div class="bw-screen">
-              <div class="bw-top"><span class="bw-run"></span><span>3 &times; 1200m</span><time>9:41</time></div>
-              <div class="bw-step">Hard &mdash; 5K effort <b>2 of 3</b></div>
-              <div class="bw-time">21:47.18</div>
-              <div class="bw-pace"><strong>3&prime;31&Prime;</strong><small>/KM</small></div>
-              <div class="bw-band"><i style="--at:27%"></i></div>
-              <div class="bw-target">3&prime;27&Prime;&ndash;3&prime;43&Prime; /KM</div>
-              <div class="bw-row"><span><strong>0.64</strong><small>KM LEFT</small></span><span class="hr"><strong>168</strong><small>BPM</small></span></div>
-            </div></div>
-            <span class="bw-crown"></span><span class="bw-side"></span>
-          </div>
-          <ul class="checks">
-            <li>Step by step: warm-up, reps, recoveries</li>
-            <li>Pace alerts when you drift out of the band</li>
-            <li>Start it like any other outdoor run</li>
-          </ul>
-        </div>
-
-        <div class="loop">
-          <div class="loop-track"></div>
-          <svg class="loop-head" viewBox="0 0 14 12" aria-hidden="true"><path d="M7 0 14 12H0z"/></svg>
-          <p class="loop-label">The finished run comes back through Apple Health, <em>scored against the plan</em></p>
-        </div>
-      </div>
+          <span class="seq-n"><b>3</b></span>
+          <h3>Run it from your wrist</h3>
+          <p>Start it like any outdoor run. The watch counts the reps and tells you when you drift
+            out of the pace band.</p>
+        </li>
+      </ol>
+      <figcaption class="seq-after">Afterwards the run comes back through Apple Health, and Gradial
+        scores it against what the session asked for.</figcaption>
     </figure>
   </div>
 </section>
@@ -188,224 +141,151 @@
 <section class="studio" id="studio" aria-labelledby="studio-h">
   <div class="wrap">
     <div class="sec-head">
-      <p class="kicker">New in Gradial 2.0</p>
       <h2 id="studio-h">AI coaching, with the AI you already use.</h2>
-      <p>Studio turns any LLM into a running coach. It gives Claude, ChatGPT or Gemini your plan,
-        your fitness and your last four weeks of runs, so it can ease a week when a calf is tight,
-        rebuild around a holiday, or adapt the plan to how training is going. Gradial writes your
-        training in a small plain-text plan language that any AI can read and write. The AI suggests the change, Gradial&rsquo;s pace engine sets the paces, and nothing
-        moves until you approve it. Gradial makes no AI calls of its own: it&rsquo;s your AI, on your
-        account.</p>
+      <p>Studio gives Claude, ChatGPT or Gemini your plan, your fitness and your last four weeks of
+        runs, so it can ease a week when a calf is tight, rebuild around a holiday, or adapt the plan
+        to how training is going. The AI suggests the change, Gradial&rsquo;s own engine sets the
+        paces, and nothing moves until you approve it. Gradial makes no AI calls of its own.</p>
     </div>
 
-    <!-- ---------- flow 1: the Mac, through iCloud Drive ---------- -->
-    <figure class="flow" aria-labelledby="flow-mac">
-      <div class="flow-head">
-        <h3 id="flow-mac">On your Mac, through iCloud Drive</h3>
-        <p>Gradial keeps a folder in your iCloud Drive with your plan, your runs and a guide to
-          the plan language. Point an AI at the folder and ask.</p>
-      </div>
-
-      <div class="flow-grid">
-        <!-- left: the app -->
-        <div class="node node--app">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#FFB07A" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5.2h3" stroke-linecap="round"/></svg></div>
-            <div><h4>Gradial</h4><p>iPhone and Apple Watch</p></div>
-          </div>
-          <div class="devices" aria-hidden="true">
-            <div class="mini-phone"><div class="mini-screen">
-              <h6>Today</h6>
-              <div class="mini-card"><small>Thursday</small><strong>Tempo, 3 &times; 2 km</strong>
-                <div class="segs"><i style="--c:var(--z-e);flex:3"></i><i style="--c:var(--z-t);flex:4"></i><i style="--c:#2A2A30;flex:1"></i><i style="--c:var(--z-t);flex:4"></i><i style="--c:#2A2A30;flex:1"></i><i style="--c:var(--z-t);flex:4"></i><i style="--c:var(--z-e);flex:2"></i></div></div>
-              <div class="mini-card"><small>Sunday</small><strong>Long run, 16 km</strong>
-                <div class="segs"><i style="--c:var(--z-long);flex:13"></i><i style="--c:var(--z-m);flex:3"></i></div></div>
-              <div class="mini-card"><small>Last run</small><strong>Easy, 8.1 km</strong>
-                <div class="segs"><i style="--c:var(--z-e);flex:1"></i></div></div>
-            </div></div>
-            <div class="watch"><div class="watch-body"><div class="watch-face">
-              <small>THRESHOLD 2/3</small><strong>4:29</strong><em>4:24&ndash;4:33 /km</em><div class="bar-t"></div>
-            </div></div><span class="crown"></span></div>
-          </div>
-          <ul class="checks">
-            <li>Reads your runs from Apple Health</li>
-            <li>Sends each session to your watch</li>
-            <li>Shows every change before it applies</li>
-          </ul>
-        </div>
-
-        <div class="link">
-          <span>Writes your plan and runs</span>
-          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
-          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
-        </div>
-
-        <!-- middle: the folder -->
-        <div class="node node--hub">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8FB2FF" stroke-width="1.7" stroke-linejoin="round"><path d="M7 18.5h10.2a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg></div>
-            <div><h4>iCloud Drive</h4><p>A Gradial folder of plain files</p></div>
-          </div>
-          <ul class="files">
-            <li><svg viewBox="0 0 18 18" fill="none" stroke="#AEB1CB" stroke-width="1.4"><path d="M4 1.8h6.5L14 5.3v10.9H4z"/><path d="M10.3 1.8v3.6H14"/></svg><div><code>plan.txt</code><span>Your plan <b class="tag tag-rw">Read back</b></span></div></li>
-            <li><svg viewBox="0 0 18 18" fill="none" stroke="#AEB1CB" stroke-width="1.4"><path d="M4 1.8h6.5L14 5.3v10.9H4z"/><path d="M9 8.5v5M6.5 11h5"/></svg><div><code>new-plan.txt</code><span>A plan to add <b class="tag tag-rw">Read back</b></span></div></li>
-            <li><svg viewBox="0 0 18 18" fill="none" stroke="#AEB1CB" stroke-width="1.4"><rect x="2.5" y="3" width="13" height="12" rx="1.5"/><path d="M2.5 7h13M2.5 11h13M7 3v12"/></svg><div><code>runs.csv</code><span>Every run, matched</span></div></li>
-            <li><svg viewBox="0 0 18 18" fill="none" stroke="#AEB1CB" stroke-width="1.4"><rect x="2.5" y="3" width="13" height="12" rx="1.5"/><path d="M2.5 7h13M2.5 11h13M7 3v12"/></svg><div><code>weeks.csv</code><span>Planned against run</span></div></li>
-            <li><svg viewBox="0 0 18 18" fill="none" stroke="#AEB1CB" stroke-width="1.4"><path d="M3 3.5h4.5a2 2 0 0 1 2 2V15a1.6 1.6 0 0 0-1.6-1.6H3zM15 3.5h-4.5a2 2 0 0 0-1 .3"/></svg><div><code>README.md</code><span>The language guide</span></div></li>
-          </ul>
-        </div>
-
-        <div class="link">
-          <span>Read and edited by your AI</span>
-          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
-          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
-        </div>
-
-        <!-- right: the AI -->
-        <div class="node node--ai">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7393" stroke-width="1.7" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8.5 20.5h7M12 17v3.5"/></svg></div>
-            <div><h4>Your AI on the Mac</h4><p>Any assistant that can open a folder</p></div>
-          </div>
-          <div class="ais"><div class="ai">Claude</div><div class="ai">ChatGPT</div></div>
-          <div class="chat">
-            <p class="bubble me">I lost a week to a cold. Ease me back in and keep the race date.</p>
-            <div class="bubble it">Rebuilt weeks 7 and 8 in <code>plan.txt</code>: easy running first, the
-              tempo back on Thursday of week 8, intervals from week 9.</div>
-          </div>
-        </div>
-
-        <div class="loop">
-          <div class="loop-track"></div>
-          <svg class="loop-head" viewBox="0 0 14 12" aria-hidden="true"><path d="M7 0 14 12H0z"/></svg>
-          <p class="loop-label">The edited plan comes back to your phone <em>for review</em></p>
-        </div>
-      </div>
-
-      <div class="rows">
-        <div class="row">
-          <h5>In the folder</h5>
-          <ul>
-            <li><b><code>plan.txt</code></b>Your plan, week by week. Edit it to change the plan.</li>
-            <li><b><code>new-plan.txt</code></b>Write a new plan here and Gradial offers to add it.</li>
-            <li><b><code>runs.csv</code></b>Every run since the plan began: pace, heart rate, execution score.</li>
-            <li><b><code>weeks.csv</code></b>Each week, planned against run, and how much of it was easy.</li>
-          </ul>
-        </div>
-        <div class="row">
-          <h5>Ask it to</h5>
-          <ul>
-            <li><b>Adapt</b>Rebuild the next fortnight around a week lost to illness.</li>
-            <li><b>Rearrange</b>Move every long run to Saturday.</li>
-            <li><b>Build</b>Write a 16-week plan for a spring marathon.</li>
-            <li><b>Check</b>Tell me whether my easy runs have really been easy.</li>
-          </ul>
-        </div>
-      </div>
-    </figure>
-
-    <!-- ---------- flow 2: the phone, copy and paste ---------- -->
-    <figure class="flow" aria-labelledby="flow-phone">
-      <div class="flow-head">
-        <h3 id="flow-phone">On your phone, with copy and paste</h3>
-        <p>No Mac needed. Studio puts everything an AI needs on your clipboard, then reads its
-          reply back.</p>
-      </div>
-
-      <div class="flow-grid">
-        <!-- left: Studio -->
-        <div class="node node--app">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#FFB07A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 14.5 9.5M13 5l1-2.5L15 5l2.5 1L15 7l-1 2.5L13 7l-2.5-1zM19 11l.6 1.4L21 13l-1.4.6L19 15l-.6-1.4L17 13l1.4-.6z"/></svg></div>
-            <div><h4>Gradial Studio</h4><p>On your iPhone</p></div>
-          </div>
-          <div class="devices" aria-hidden="true">
-            <div class="mini-phone"><div class="mini-screen">
-              <h6>Studio</h6>
-              <div class="mini-field">Move my long runs to Saturday and add strides after easy runs.</div>
-              <div class="mini-btns"><b>Copy prompt</b><b>Paste</b></div>
-              <div class="mini-card"><small>This plan</small><strong>Half Marathon 1:35:00</strong>
-                <div class="segs"><i style="--c:var(--z-e);flex:5"></i><i style="--c:var(--z-t);flex:2"></i><i style="--c:var(--z-i);flex:1"></i><i style="--c:var(--z-long);flex:4"></i></div></div>
-              <p class="mini-note">4 free changes left</p>
-            </div></div>
-          </div>
-          <ul class="checks">
-            <li>Say what you want in plain words</li>
-            <li>Change this plan, or start a new one</li>
-          </ul>
-        </div>
-
-        <div class="link">
-          <span>Copy prompt</span>
-          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
-          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
-        </div>
-
-        <!-- middle: the prompt -->
-        <div class="node node--hub">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8FB2FF" stroke-width="1.7" stroke-linejoin="round"><rect x="5" y="4.5" width="14" height="17" rx="2"/><path d="M9 4.5V3h6v1.5M8.5 10h7M8.5 13.5h7M8.5 17h4" stroke-linecap="round"/></svg></div>
-            <div><h4>The prompt</h4><p>On your clipboard, ready to paste</p></div>
-          </div>
-          <ul class="contents">
-            <li><span class="dot"><svg viewBox="0 0 18 18" fill="none" stroke="#FFB07A" stroke-width="1.5"><path d="M4 1.8h6.5L14 5.3v10.9H4z"/></svg></span><div><b>Your plan</b>In Gradial&rsquo;s plan language</div></li>
-            <li><span class="dot"><svg viewBox="0 0 18 18" fill="none" stroke="#5EA894" stroke-width="1.5" stroke-linecap="round"><path d="M2 12.5 6 8l3 3 7-7"/></svg></span><div><b>Your last four weeks</b>Every run, against its session</div></li>
-            <li><span class="dot"><svg viewBox="0 0 18 18" fill="none" stroke="#FF7393" stroke-width="1.5" stroke-linejoin="round"><path d="M3 4h12v8H8l-3.5 3v-3H3z"/></svg></span><div><b>What you asked for</b>In your own words</div></li>
-            <li><span class="dot"><svg viewBox="0 0 18 18" fill="none" stroke="#8FB2FF" stroke-width="1.5"><path d="M3 3.5h4.5a2 2 0 0 1 2 2V15a1.6 1.6 0 0 0-1.6-1.6H3zM15 3.5h-4.5a2 2 0 0 0-2 2"/><path d="M15 3.5v9.9h-4.9a1.6 1.6 0 0 0-1.6 1.6"/></svg></span><div><b>The rules</b>How to write a plan Gradial can read</div></li>
-          </ul>
-        </div>
-
-        <div class="link">
-          <span>Paste into your AI app</span>
-          <svg class="wire h" viewBox="0 0 92 14" aria-hidden="true"><line x1="2" y1="7" x2="80" y2="7"/><path d="M79 1.5 91 7 79 12.5z"/></svg>
-          <svg class="wire v" viewBox="0 0 14 40" aria-hidden="true"><line x1="7" y1="2" x2="7" y2="28"/><path d="M1.5 27 7 39 12.5 27z"/></svg>
-        </div>
-
-        <!-- right: the AI app -->
-        <div class="node node--ai">
-          <div class="node-title">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#FF7393" stroke-width="1.7" stroke-linejoin="round"><path d="M4 5h16v11H10l-4.5 3.5V16H4z"/></svg></div>
-            <div><h4>Your AI app</h4><p>On the same phone</p></div>
-          </div>
-          <div class="ais" style="--n:3"><div class="ai">Claude</div><div class="ai">ChatGPT</div><div class="ai">Gemini</div></div>
-          <div class="chat">
-            <div class="bubble it">Here&rsquo;s your plan with the long runs on Saturday:
+    <div class="seq-group">
+      <h3 class="seq-title" id="flow-phone">On your iPhone <small>with copy and paste</small></h3>
+      <figure class="seq" aria-labelledby="flow-phone">
+        <ol class="seq-steps">
+          <li>
+            <div class="seq-art"><div class="device"><img src="assets/screens/studio-copy.jpg" width="600" height="1304" loading="lazy"
+              alt="Gradial's Studio tab: a box for what should change, and the Copy prompt and Paste buttons."></div></div>
+            <span class="seq-n"><b>1</b></span>
+            <h3>Copy the prompt</h3>
+            <p>Say what you want in plain words, or leave it blank. Studio copies your plan, your
+              recent runs and the rules of the plan language.</p>
+          </li>
+          <li>
+            <div class="seq-art">
+              <div class="thread" aria-hidden="true">
+                <p class="me">Move my long runs to Saturday and add strides after easy runs.</p>
+                <div class="it">Here&rsquo;s week 7 with the long run on Saturday.
 <pre><span class="t">```gradial</span>
 <span class="k">week 7</span> <span class="t">build</span>
- wed easy <span class="zE">8km</span>, 6x20s <span class="zR">@stride</span>
- sat long <span class="zL">17km</span>, 3km <span class="zM">@M</span>
+  wed easy  <span class="zE">8km</span>, 6x20s <span class="zR">@stride</span>
+  sat long  <span class="zL">17km</span>, 3km <span class="zM">@M</span>
 <span class="t">```</span></pre></div>
-            <p class="bubble it">Both long runs are on Saturday now, and Wednesday&rsquo;s easy run ends with strides.</p>
-          </div>
-        </div>
+              </div>
+            </div>
+            <span class="seq-n"><b>2</b></span>
+            <h3>Ask in your AI app</h3>
+            <p>Paste it into ChatGPT, Claude or Gemini on the same phone. It replies with the plan,
+              rewritten in Gradial&rsquo;s plan language.</p>
+          </li>
+          <li>
+            <div class="seq-art"><div class="device"><img src="assets/screens/review.jpg" width="600" height="1304" loading="lazy"
+              alt="Gradial's review: three sessions in week 5 changed, each shown as before and after, with Apply 3 changes and Discard."></div></div>
+            <span class="seq-n"><b>3</b></span>
+            <h3>Paste the reply, then review</h3>
+            <p>Gradial lists every session the reply changes. Apply takes it; Discard leaves your plan
+              as it was.</p>
+          </li>
+        </ol>
+      </figure>
+    </div>
 
-        <div class="loop">
-          <div class="loop-track"></div>
-          <svg class="loop-head" viewBox="0 0 14 12" aria-hidden="true"><path d="M7 0 14 12H0z"/></svg>
-          <p class="loop-label">Copy the whole reply, then tap Paste <em>in Studio</em></p>
-        </div>
-      </div>
-
-      <div class="review">
-        <div>
-          <h5>Every change, shown before it happens</h5>
-          <p>Gradial lines the AI&rsquo;s plan up against yours and lists every session it adds, changes
-            or removes. <b>Apply</b> takes it, and the new sessions go to your watch. <b>Discard</b>
-            leaves your plan as it was.</p>
-          <ul class="checks">
-            <li>Weeks before today are never touched</li>
-            <li>The AI names the effort; Gradial sets the pace from your fitness</li>
-            <li>Five changes are free. Gradial Pro unlocks the rest</li>
-          </ul>
-        </div>
-        <div class="code" role="img" aria-label="A review listing three changes: Sunday's long run moved to Saturday, and strides added after Wednesday's easy run.">
-          <div class="code-head"><i></i><i></i><i></i><b>Review: 3 changes</b></div>
+    <div class="seq-group">
+      <h3 class="seq-title" id="flow-mac">On your Mac <small>through iCloud Drive</small></h3>
+      <figure class="seq" aria-labelledby="flow-mac">
+        <ol class="seq-steps">
+          <li>
+            <div class="seq-art">
+              <div class="finder" aria-hidden="true">
+                <div class="finder-bar"><i></i><i></i><i></i><span>iCloud Drive &rsaquo; Gradial</span></div>
+                <ul>
+                  <li><span>plan.txt</span><em>Your plan</em></li>
+                  <li><span>new-plan.txt</span><em>A plan to add</em></li>
+                  <li><span>runs.csv</span><em>Every run, matched</em></li>
+                  <li><span>weeks.csv</span><em>Planned against run</em></li>
+                  <li><span>README.md</span><em>The plan language</em></li>
+                </ul>
+              </div>
+            </div>
+            <span class="seq-n"><b>1</b></span>
+            <h3>Gradial keeps a folder</h3>
+            <p>Your plan, your runs and a guide to the plan language, as plain files in your own
+              iCloud Drive.</p>
+          </li>
+          <li>
+            <div class="seq-art">
+              <div class="code plain" aria-hidden="true">
+                <div class="code-head"><b>plan.txt</b></div>
 <pre><span class="k">week 7</span> <span class="t">build</span>
 <span class="del">  wed easy  8km</span><span class="add">  wed easy  8km, 6x20s @stride</span><span class="del">  sun long  17km, 3km @M</span><span class="add">  sat long  17km, 3km @M</span></pre>
-          <div class="code-foot"><span class="apply">Apply 3 changes</span><span>Discard</span></div>
-        </div>
-      </div>
-    </figure>
+              </div>
+            </div>
+            <span class="seq-n"><b>2</b></span>
+            <h3>Your AI edits it</h3>
+            <p>Point any assistant that can open a folder at it and ask. The README teaches it the
+              plan language, so there&rsquo;s nothing to set up.</p>
+          </li>
+          <li>
+            <div class="seq-art"><div class="device"><img src="assets/screens/studio-mac.jpg" width="600" height="1304" loading="lazy"
+              alt="Gradial's Studio tab on iPhone: Changed on your Mac, plan.txt, 3 sessions changed, with Review and Discard."></div></div>
+            <span class="seq-n"><b>3</b></span>
+            <h3>Review it on your iPhone</h3>
+            <p>The change waits in Studio as &ldquo;Changed on your Mac&rdquo;. Nothing moves until you
+              apply it.</p>
+          </li>
+        </ol>
+      </figure>
+    </div>
+
+    <ul class="notes">
+      <li>Weeks before today are never touched, whatever the reply says.</li>
+      <li>The AI names the effort; Gradial sets the pace from your fitness.</li>
+      <li>Five changes are free. Gradial Pro unlocks the rest.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ devices and sync ============ -->
+<section class="devices" id="devices" aria-labelledby="dev-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="dev-h">One plan, on every screen you own.</h2>
+      <p>Plan the block on your Mac, check the week on your iPad, open the session on your iPhone
+        or unfold it on an iPhone Duo. Gradial Pro keeps them in step through your own iCloud.</p>
+    </div>
+
+    <div class="lineup">
+      <figure class="ln-mac">
+        <div class="lid"><img src="assets/devices/mac.jpg" width="1240" height="820" loading="lazy"
+          alt="Gradial on a Mac: the Runs list, a map of an 8.3 km tempo run around Oxford, and its distance, time and pace."></div>
+        <div class="deck" aria-hidden="true"></div>
+        <figcaption>Mac</figcaption>
+      </figure>
+      <figure class="ln-ipad">
+        <div class="frame"><img src="assets/devices/ipad.jpg" width="700" height="933" loading="lazy"
+          alt="Gradial on an iPad: today's easy 5.9 km run, the week around it and the execution scores."></div>
+        <figcaption>iPad</figcaption>
+      </figure>
+      <figure class="ln-duo">
+        <div class="frame"><img src="assets/devices/duo.jpg" width="1000" height="703" loading="lazy"
+          alt="Gradial unfolded on an iPhone Duo: the run list beside the route map and the run's numbers."></div>
+        <figcaption>iPhone Duo, unfolded</figcaption>
+      </figure>
+      <figure class="ln-iphone">
+        <div class="device"><img src="assets/devices/iphone.jpg" width="500" height="1086" loading="lazy"
+          alt="Gradial on an iPhone: the half marathon plan, week 4 of 6."></div>
+        <figcaption>iPhone</figcaption>
+      </figure>
+    </div>
+
+    <div class="sync">
+      <div><h3>Change it anywhere</h3><p>Edit a session, move a week or apply a Studio change on any of
+        them, and the rest follow.</p></div>
+      <div><h3>Runs come from your iPhone</h3><p>Your iPhone reads each run from Apple Health and
+        shares it, scored, with your iPad and Mac.</p></div>
+      <div><h3>Your iCloud, not ours</h3><p>Sync uses your private iCloud database. Gradial has no
+        server, so nothing passes through us.</p></div>
+    </div>
+    <p class="small">Sync is part of Gradial Pro: one purchase, shared with your family.</p>
   </div>
 </section>
 
@@ -452,15 +332,6 @@
       </figure>
     </div>
 
-    <div class="platforms">
-      <div class="platform"><h3>iPhone</h3><p>Reads your runs from Apple Health and schedules your watch.
-        Where Studio copies and pastes. Unfold an iPhone Duo and the plan opens out beside each
-        session.</p></div>
-      <div class="platform"><h3>Apple Watch</h3><p>Each session appears in the Workout app on its day,
-        with every step and a pace range to hold.</p></div>
-      <div class="platform"><h3>iPad and Mac</h3><p>The whole plan on a big screen, with your runs
-        arriving from the iPhone through Sync.</p></div>
-    </div>
   </div>
 </section>
 
